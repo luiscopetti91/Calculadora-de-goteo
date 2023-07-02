@@ -17,7 +17,7 @@ function calcularGoteo() {
 
     resultado += `El goteo en microgotas por minuto es de ${goteoMicrogotas.toFixed(2)} μgtt/min (${Math.ceil(goteoMicrogotas)}).<br>`;
     resultado += `El goteo en macrogotas por minuto es de ${goteoMacrogotas.toFixed(2)} gtt/min (${Math.ceil(goteoMacrogotas)}).<br>`;
-    resultado += `El goteo en mililitros por hora es de ${goteoMlHora.toFixed(2)} ml/h (${Math.ceil(goteoMlHora)}).<br>`;
+    resultado += `El goteo en mililitros por hora es de ${goteoMlHora.toFixed(2)} ml/h (${Math.ceil(goteoMlHora) + " ml/h"}).<br>`;
   }
 
   document.getElementById('resultado').innerHTML = resultado;
