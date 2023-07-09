@@ -22,3 +22,24 @@ function calcularGoteo() {
 
   document.getElementById('resultado').innerHTML = resultado;
 }
+
+
+
+//footer
+const name = "Copetti, Jorge Luis";
+const typedTextElement = document.getElementById("typed-text");
+const cursorElement = document.getElementById("cursor");
+
+let index = 0;
+
+function typeWriter() {
+  if (index < name.length) {
+    typedTextElement.textContent += name.charAt(index);
+    index++;
+    setTimeout(typeWriter, Math.random() * 200 + 100); // Añade un retraso aleatorio para simular la velocidad de escritura
+  } else {
+    cursorElement.style.display = "none"; // Oculta el cursor al finalizar la escritura
+  }
+}
+
+typeWriter();
