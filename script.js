@@ -26,7 +26,7 @@ function calcularGoteo() {
 
 
 //footer
-const name = "Herramientas utiles para Enfermeria";
+const name = "Herramientas utiles para Enfermeria!";
 const typedTextElement = document.getElementById("typed-text");
 const cursorElement = document.getElementById("cursor");
 
